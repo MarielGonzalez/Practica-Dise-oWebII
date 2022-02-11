@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        .header {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #9046c2;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .footer {
+            background-color: #eddff7;
+            color: rgb(22, 8, 8);
+            font-size: medium;
+            font-weight: bold;
+        }
+        
+        .subrayado {
+            text-decoration: line-through;
+        }
+        
+        .sidebarColor {
+            background-color: aquamarine;
+        }
+        
+        .sombra {
+            font-weight: bold;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-table;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 50px;
+            height: 15px;
+            background-color: rgb(13, 14, 13);
+            color: rgb(250, 244, 244);
+            text-align: center;
+            border-radius: 3px;
+            padding: 5px 0;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 0;
+            bottom: -25px;
+            left: 0%;
+            font-size: x-small;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        EJERCICIO 11
+    -->
+    <h1>Ejercicio 11</h1>
+    <h2>Su pedido</h2>
+
+    <table>
+        <caption style="caption-side:bottom ; text-emphasis:none; text-align: left; font-size: x-small;">Figura 7.3 Tabla sencilla con celdas de cabecera</caption>
+        <thead>
+            <tr class="header">
+                <th scope="col">Nombre del producto</th>
+                <th scope="col">Precio Unitario</th>
+                <th scope="col">Unidades</th>
+                <th scope="col">Subtotales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Reproductor de MP3(80GB)</td>
+                <td>192.2</td>
+                <td>1</td>
+                <td>192.2</td>
+            </tr>
+            <tr>
+                <td>Fundas de Colores</td>
+                <td>2.50</td>
+                <td>5</td>
+                <td>12.50</td>
+            </tr>
+            <tr>
+                <td>Reproductor de radio & Control Remoto</td>
+                <td>12.99</td>
+                <td>1</td>
+                <td>12.99</td>
+            </tr>
+        </tbody>
+        <tfoot class="footer">
+            <tr>
+                <td>TOTAL</td>
+                <td>-</td>
+                <td>7</td>
+                <td>207.51</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <!--
+        EJERCICIO 12
+    -->
+    <hr>
+    <h1>Ejercicio 12</h1>
+    <h2>Resultados de la búsqueda</h2>
+
+    <table summary="Tabla Ejercicio 12">
+        <caption style="text-emphasis:none; text-align: left; font-size: x-small; text-align: center;">Resultados de la búsqueda</caption>
+        <thead>
+            <tr class="header">
+                <th scope="col">Imagen</th>
+                <th scope="col">Datos</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <img src="portatil.png" alt="Laptop"> </td>
+                <td> <a href="https://www.tventas.com/92-laptops" target="_blank">Portatil - 3GHz - 4GB RAM</a> <br>
+                    <a href="">Comprar</a> <br> <span class="subrayado">2.990€</span>
+                    <span>2.599€</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td> <img src="videocamara.png" alt="Laptop"> </td>
+                <td><a href="https://www.tventas.com/90-filmadoras" target="_blank">Videocamara - Alta Definición 1080p - 60GB</a> <br>
+                    <a href="">Comprar</a> <br> <span class="subrayado">1.099€</span>
+                    <span>999€</span></td>
+
+            </tr>
+            <tr>
+                <td> <img src="tv.png" alt="Laptop"> </td>
+                <td>
+                    <a href="https://www.tventas.com/88-televisores" target="_blank">Televisor - 46" - Full <abbr title="High Definition">HD</abbr></a> <br>
+                    <a href="">Comprar</a> <br> <span class="subrayado">1.999€</span>
+                    <span>1.799€</span>
+                </td>
+            </tr>
+            <tr>
+                <td> <img src="movil.png" alt="Laptop"> </td>
+                <td><a href="https://www.tventas.com/101-telefonos-celulares" target="_blank">Movil - 3G - Wifi - 8GB</a> <br>
+                    <a href="">Comprar</a> <br> <span class="subrayado">399€</span>
+                    <span>349€</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <caption style="caption-side:bottom ; text-emphasis:none; text-align: left; font-size: x-small;">Figura 7.4 Tabla con los resultados de una búsqueda</caption>
+        </tfoot>
+
+    </table>
+
+    <!--
+        EJERCICIO 13
+    -->
+
+
+    <hr>
+    <h1>Ejercicio 13</h1>
+    <h2>Comparativa de reproductores MP3</h2>
+
+    <table summary="Tabla comparativa de las caracteristicas tecnicas de los reproductores MP3" style="text-align: center; width: 10%;">
+        <caption style="text-emphasis:none; text-align: center; font-size: x-small; text-align: center;">Tabla comparativa de las caracteristicas tecnicas de los reproductores MP3</caption>
+        <thead style="padding-bottom: 10%; padding-top: 100px; width: 10%; height: 7em;" class="sombra">
+            <p>❗Coloque el cursor sobre cada color para ver su descripción</p>
+            <tr>
+                <th rowspan="0" class="sidebarColor"> </th>
+                <th colspan="3">
+                    <img src="mp3_pequeno_blanco.png" alt="mp3_pequeno_blanco">
+                    <img src="mp3_pequeno_negro.png" alt="mp3_pequeno_negro">
+                    <p> <abbr title=" MPEG audio Layer-3">MP3</abbr> mini</p>
+                </th>
+
+                <th colspan="2">
+                    <img src="mp3_grande_blanco.png" alt="mp3_grande_blanco">
+                    <img src="mp3_grande_negro.png" alt="mp3_grande_negro">
+                    <p> <abbr title="MPEG audio Layer-3">MP3</abbr> grande</p>
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+
+                <td rowspan="2" class="sombra sidebarColor">Capacidad <br> de Almacenamiento </td>
+                <td rowspan="2">4GB <br> (1000 canciones)</td>
+                <td rowspan="2">8GB <br> (1000 canciones)</td>
+                <td rowspan="2">16GB <br> (1000 canciones)</td>
+                <td rowspan="2">30GB <br> (1000 canciones)</td>
+                <td rowspan="2">80GB <br> (1000 canciones)</td>
+
+            </tr>
+            <tr>
+
+
+            </tr>
+            <tr>
+                <td class="sombra sidebarColor">Colores </td>
+                <td>
+                    <div class="tooltip">
+                        <img src="color_blanco.png" alt="Color blanco">
+                        <span class="tooltiptext ">Blanco</span></div>
+
+
+                    </div>
+
+                </td>
+                <td>
+                    <div class="tooltip">
+                        <img src="color_negro.png " alt="Color negro "><span class="tooltiptext ">Negro</span> </div>
+                    <div class="tooltip"> <img src="color_verde.png " alt="Color verde "> <span class="tooltiptext" style="background-color: greenyellow;">Verde</span> </div>
+                    <div class="tooltip"> <img src="color_azul.png " alt="Color azul "><span class="tooltiptext" style="background-color: rgb(47, 179, 255);">Azul </span></div><br>
+                    <div class="tooltip"> <img src="color_rosa.png " alt="Color rosa "><span class="tooltiptext" style="background-color: rgb(248, 126, 187);">Rosa</span></div>
+                </td>
+                <td>
+                    <div class="tooltip"> <img src="color_negro.png " alt="Color Negro "><span class="tooltiptext" style="background-color:black; color: rgb(255, 255, 255);">Negro </span></div>
+                </td>
+                <td colspan="2 ">
+                    <div class="tooltip">
+                        <img src="color_blanco.png " alt="Color blanco "> <span class="tooltiptext">Blanco </span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="color_negro.png " alt="Color negro"> <span class="tooltiptext">Negro </span> </div>
+
+                </td>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td class="sombra sidebarColor ">Pantalla </td>
+                <td colspan="3 "> <abbr title="Liquid crystal display ">LCD</abbr> de 3 cm (diagonal con retroiluminacion)</td>
+                <td colspan="2 "> <abbr title="Liquid crystal display ">LCD</abbr> de 6 cm (diagonal con retroiluminacion)</td>
+
+            </tr>
+
+            <tr>
+                <td rowspan="2 " class="sombra sidebarColor ">Tiempo de carga</td>
+                <td colspan="3 " rowspan="2 ">Unas 3 horas</td>
+                <td colspan="2 "> Unas 4 horas <br> </td>
+
+            </tr>
+            <tr>
+
+                <td colspan="2 ">Unas 2 horas para <br> alcanzar el 80% de la Capacidad </td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <caption style="caption-side:bottom ; text-emphasis:none; text-align: left; font-size: x-small; ">Figura 7.9 Ejemplo de tabla con una estructura compleja</caption>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
